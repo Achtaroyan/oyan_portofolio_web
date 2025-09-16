@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Achtaroyan Rakabillah — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="avatar">AR</div>
+        <div class="brand-text">
+          <div class="name">Achtaroyan Rakabillah</div>
+          <div class="role">Mahasiswa STI — UNJ</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="dark-toggle" aria-label="Toggle dark mode">🌒</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1 class="hero-title">Halo — saya <span class="accent">Achtaroyan Rakabillah</span></h1>
+        <p class="hero-sub">Calon [Profesi Impian] • Tech Enthusiast • Mahasiswa Sistem Teknologi Informasi (Semester 3)</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="cv.pdf" download>Download CV</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>Tools:</strong> Python • HTML • CSS • JavaScript</span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="Scanned_20250914-2251-05.jpg" alt="Achtaroyan" />
+          <div class="profile-caption">Achtaroyan Rakabillah</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section light-card">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="lead">Saya mahasiswa semester 3 jurusan Sistem Teknologi Informasi di UNJ. Tertarik pada pengembangan web dan software sederhana, suka belajar tool baru dan membangun proyek kecil untuk latihan. Tujuan saya adalah mengembangkan skill praktis dan menyiapkan portofolio yang menarik untuk kesempatan magang/kerja.</p>
+    </div>
+  </section>
+
+   <!-- Experience -->
+  <section id="Experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-grid">
+        <article class="exp-card" data-animate>
+          <h3>Asisten Praktikum Dasar Pemrograman</h3>
+          <p>Membantu mahasiswa baru memahami konsep dasar Python dan algoritma sederhana, serta mendampingi praktik laboratorium.</p>
+          <span class="exp-year">2024</span>
+        </article>
+
+        <article class="exp-card" data-animate>
+          <h3>Anggota Himpunan Mahasiswa STI</h3>
+          <p>Terlibat dalam kegiatan organisasi kemahasiswaan, mengelola acara workshop teknologi, dan kolaborasi dengan sesama mahasiswa.</p>
+          <span class="exp-year">2023–Sekarang</span>
+        </article>
+
+        <article class="exp-card" data-animate>
+          <h3>Freelance Landing Page</h3>
+          <p>Mengerjakan landing page sederhana untuk UMKM lokal menggunakan HTML, CSS, dan JavaScript, dengan fokus mobile-first design.</p>
+          <span class="exp-year">2023</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="section light-card">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head"><span>Python</span><span>70%</span></div>
+          <div class="skill-bar"><div style="width:70%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>HTML & CSS</span><span>50%</span></div>
+          <div class="skill-bar"><div style="width:50%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>JavaScript</span><span>40%</span></div>
+          <div class="skill-bar"><div style="width:40%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div class="contact-card" data-animate>
+        <h2>Contact Me</h2>
+        <p>Ingin kolaborasi atau tanya-tanya? Kirim pesan lewat form ini atau lewat email.</p>
+
+        <form id="contact-form" action="#" onsubmit="handleSubmit(event)">
+          <label>
+            <input type="text" name="name" placeholder="Nama" value="Achtaroyan" required />
+          </label>
+          <label>
+            <input type="email" name="email" placeholder="Email" required />
+          </label>
+          <label>
+            <textarea name="message" rows="5" placeholder="Pesan" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Kirim Pesan</button>
+            <a class="btn ghost" href="mailto:achtaroyan.rakabillah@gmail.com">Email Langsung</a>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-info" data-animate>
+        <h3>Stay Connected</h3>
+        <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/username</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/" target="_blank" rel="noreferrer">linkedin.com/in/username</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/" target="_blank" rel="noreferrer">@achtaroyan</a></p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© Achtaroyan 2025</div>
+      <div class="small">Built with ❤️ — Inspired, not copied</div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') root.classList.add('dark');
+
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Pesan terkirim! (ini demo — hubungkan form ke backend atau Formspree untuk produksi)');
+      e.target.reset();
+    }
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(ent => {
+        if (ent.isIntersecting) ent.target.classList.add('in');
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('[data-animate]').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
